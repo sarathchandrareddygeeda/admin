@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  .product-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 40px; /* Increased gap value */
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .product-card {
+    border: 1px solid #ccc;
+    padding: 20px;
+    text-align: center;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    position: relative;
+  }
+
+  .product-icon {
+    width: 60px;
+    height: 60px;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: -30px;
+    left: calc(50% - 30px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+</style>
+<title>Product Cards Grid</title>
+</head>
+<body>
+  <div class="product-container">
+    <div class="product-card">
+      <div class="product-icon">
+        <img src="employee-icon.png" alt="Employee List">
+      </div>
+      <h2>Employee List</h2>
+      <p>View and manage employees</p>
+    </div>
+    <div class="product-card">
+      <div class="product-icon">
+        <img src="add-employee-icon.png" alt="Add Employee">
+      </div>
+      <h2>Add Employee</h2>
+      <p>Add a new employee</p>
+    </div>
+    <div class="product-card">
+      <div class="product-icon">
+        <img src="leave-request-icon.png" alt="Leave Request">
+      </div>
+      <h2>Leave Request</h2>
+      <p>Submit and manage leave requests</p>
+    </div>
+    <div class="product-card">
+      <div class="product-icon">
+        <img src="add-authority-icon.png" alt="Add Authority">
+      </div>
+      <h2>Add Authority</h2>
+      <p>Assign new authorities</p>
+    </div>
+  </div>
+</body>
+</html>
