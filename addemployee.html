@@ -4,48 +4,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         .addemployee-container{
-            margin-top: 50px;
+            margin-top: 100px;
            margin-left: 550px;
             max-width: 600px;
             font-family: monospace;
             justify-content: center;
             align-items: center;
             display: flex;
-            /* background: linear-gradient(#0056b3,#007bff) no-repeat; */
         }
-        @keyframes formAnimation {
-        0% {
-          opacity: 0;
-          transform: translateY(-10px);
-        }
-        100% {
-          opacity: 1;
-          transform: translateY(0);
-        }
-      }
         .add-employee-form{
             display: flex;
             flex-direction: column;
             width: 80%;
             margin: 10px;
-            /* border: 2px solid black; */
-            box-shadow:  0px 0px 10px rgba(0, 0, 0, 0.301);
-            box-sizing: border-box;
+            padding-bottom: 20px;
             font-size: 16px;
             border-radius: 6px;
             justify-content: center;
-            animation: formAnimation 2s ease;
-            /* background: transparent;
-            backdrop-filter: blur(8px) saturate(0.8);  */
+            box-shadow: 0 0 10px rgba(14, 14, 14, 0.6);
+            align-items: center;
         }
         .addemp_label{
             font-size: 16px;
-            background-color: transparent;
+            background-color: white;
             font-weight: bold;
             vertical-align: middle;
             display: inline-block;
-            width: 150px;
-            margin-left: 43px;
         }
         .addemp_input{
             width: 80%;
@@ -53,41 +37,16 @@
             margin: 8px ;
             border: 1px solid #ccc;
             border-radius: 6px;
-            margin-left: 43px;
-            background-color: transparent;
         }
-        .addemp_input:focus{
-            outline: none;
-            border-color: #007bff;
-            border-bottom-width: 4px;
-        }
-        .addemp_input:hover{
-            outline: none;
-            border-color: #007bff;
-        }
-      
         .addemp_select{
             
             width: 80%;
-            padding: 12px;
+            padding: 8px;
             margin: 8px 0;
             border: 1px solid #ccc;
             border-radius: 6px;
-            margin-left: 43px;
         }
-        .addemp_select:focus{
-            outline: none;
-            border-color: #007bff;
-            border-bottom-width: 4px;
-        }
-        .addemp_select:hover{
-            outline: none;
-            border-color: #007bff;
-        }
-        .add_emp_heading{
-            margin-left: 34%;
-        }
-        .addemp_btn{
+        input[type="submit"] {
             background-color: #007bff;
             color: white;
             border: none;
@@ -96,27 +55,15 @@
             cursor: pointer;
             display: block;
             margin: 0 auto;
-            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+            box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.1);
             animation: buttonAnimation 2s infinite linear; /* Add button animation */
-            margin-top: 5px;
-            margin-bottom: 10px;
         }
-        @keyframes buttonAnimation {
-        0%,
-        100% {
-          transform: scale(1);
-        }
-        50% {
-          transform: scale(1.05);
-        }
-      }
     </style>
 </head>
 <body>
     <div class="addemployee-container">
         <form class="add-employee-form" method="post">
-            <h2 class="add_emp_heading">Add Employee</h2>
-            <hr style=" width: 90%;"/>
+            <h2 style="font-size: 32px;">Add Employee</h2>
             <label class="addemp_label">Name</label>
             <input type="text" class="addemp_input" placeholder="Name"/>
         
@@ -136,7 +83,7 @@
              <input type="text" class="addemp_input" placeholder="Contact Number">
              <label class="addemp_label">Password</label>
              <input type="password" class="addemp_input" placeholder="Password"/>
-             <input type="submit" class="addemp_btn" placeholder="Add"/>
+             <input type="submit" placeholder="Add"/>
         </form>
     </div>
 </body>
