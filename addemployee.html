@@ -17,10 +17,11 @@
             flex-direction: column;
             width: 80%;
             margin: 10px;
-            border: 2px solid black;
+            padding-bottom: 20px;
             font-size: 16px;
             border-radius: 6px;
             justify-content: center;
+            box-shadow: 0 0 10px rgba(14, 14, 14, 0.6);
             align-items: center;
         }
         .addemp_label{
@@ -29,7 +30,6 @@
             font-weight: bold;
             vertical-align: middle;
             display: inline-block;
-            width: 150px;
         }
         .addemp_input{
             width: 80%;
@@ -55,7 +55,7 @@
             cursor: pointer;
             display: block;
             margin: 0 auto;
-            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+            box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.1);
             animation: buttonAnimation 2s infinite linear; /* Add button animation */
         }
     </style>
@@ -63,7 +63,7 @@
 <body>
     <div class="addemployee-container">
         <form class="add-employee-form" method="post">
-            <h2>Add Employee</h2>
+            <h2 style="font-size: 32px;">Add Employee</h2>
             <label class="addemp_label">Name</label>
             <input type="text" class="addemp_input" placeholder="Name"/>
         
