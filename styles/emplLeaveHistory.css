@@ -1,0 +1,43 @@
+body {
+    background-color: white;
+    font-family: monospace;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.table-container {
+
+    text-align: center;
+    overflow: hidden;
+    max-height: 1000px; /* Adjust this value to match your content height */
+    transition: max-height 1.5s ease-in-out;
+}
+
+.table-container.closed {
+    max-height: 0;
+}
+
+.leave-table {
+    background-color: #b1ecfa;
+    border-collapse: collapse;
+    width: 90%;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 4px solid white;
+    margin-top: 20px;
+}
+
+.leave-table th, .leave-table td {
+    border: 1px solid white;
+    padding: 8px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+
+.leave-table th {
+    background-color: #f2f2f2;
+}

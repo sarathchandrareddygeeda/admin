@@ -1,0 +1,55 @@
+.addemployee-container{
+    margin-top: 100px;
+   margin-left: 550px;
+    max-width: 600px;
+    font-family: monospace;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.add-employee-form{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 10px;
+    padding-bottom: 20px;
+    font-size: 16px;
+    border-radius: 6px;
+    justify-content: center;
+    box-shadow: 0 0 10px rgba(14, 14, 14, 0.6);
+    align-items: center;
+}
+.addemp_label{
+    font-size: 16px;
+    background-color: white;
+    font-weight: bold;
+    vertical-align: middle;
+    display: inline-block;
+}
+.addemp_input{
+    width: 80%;
+    padding: 12px;
+    margin: 8px ;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+.addemp_select{
+    
+    width: 80%;
+    padding: 8px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+input[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.1);
+    animation: buttonAnimation 2s infinite linear; /* Add button animation */
+}
